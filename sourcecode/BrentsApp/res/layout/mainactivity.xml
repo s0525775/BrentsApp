@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout 
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent" 
+    android:layout_height="fill_parent"
+    android:background="#FF666666"
+	android:layout_alignParentTop="true" >
+    <TextView
+        android:id="@+id/mainTextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="3sp"
+        android:background="#FFCCCCCC"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        android:gravity="right" />
+   	<EditText
+		android:id="@+id/mainEditText"
+		android:layout_width="match_parent"
+		android:layout_height="110sp"
+		android:layout_margin="3sp"
+        android:background="#FFFFFFFF"
+        android:textSize="18sp"
+		android:layout_below="@id/mainTextView"
+		android:inputType="textMultiLine" 
+		android:maxLength="160"
+		android:gravity="top" />
+	<Button
+        android:id="@+id/clearButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="3sp"
+        android:background="@android:drawable/btn_default"
+		android:layout_below="@id/mainEditText"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:text="@string/app_clearbutton" />
+	<Button
+        android:id="@+id/exitButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:drawable/btn_default"
+		android:layout_below="@id/clearButton"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:text="@string/app_exitbutton" />
+</RelativeLayout>
